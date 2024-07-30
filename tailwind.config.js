@@ -5,8 +5,22 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
+      screens: {
+        'xxsm':'400px',
+        'xsm': '550px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px'
+
+      },
+      fontFamily: {
+        'sans': ['Palanquin', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -14,5 +28,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  extend: {
+    fontFamily: {
+      palanquin: ['Palanquin', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
+    }
+  }
 };
