@@ -5,11 +5,11 @@ const nextConfig = {
             
             {
                 source: '/auth/:path*',
-                destination: 'http://localhost:4000/auth/:path*', // This should match the backend's API path
+                destination: 'https://ever-farm-backend-g57m-p9i4m9r9n-sushants-projects-c40f823c.vercel.app:/auth/:path*', // This should match the backend's API path
             },
             {
                 source: '/api/:path*',
-                destination: 'http://localhost:4000/api/:path*', // This should match the backend's API path
+                destination: 'https://ever-farm-backend-g57m-p9i4m9r9n-sushants-projects-c40f823c.vercel.app/api/:path*', // This should match the backend's API path
             }
         ];
     }, 
