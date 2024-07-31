@@ -25,7 +25,7 @@ const FarmManagement = () => {
     formData.append('file', fileInput.files[0])
 
     try {
-      const response = await axios.post('/api/upload', formData, { 
+      const response = await axios.post('/python/predict', formData, { 
         headers: {
           'Content-Type': 'multipart/form-data',
         },

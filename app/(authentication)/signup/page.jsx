@@ -2,8 +2,10 @@
 
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const SignUp = () => {
+    const router = useRouter();
     const [form, setForm] = useState({
         userName: '',
         email: '',
@@ -35,6 +37,11 @@ const SignUp = () => {
             } else {
                 console.error('Error:', res.data.message);
             }
+            if (res.status === 201) {
+                router.push('/login');
+            }
+
+
         } catch (error) {
             console.error('Axios error:', error);
         }
