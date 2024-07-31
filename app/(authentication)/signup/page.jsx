@@ -29,6 +29,7 @@ const SignUp = () => {
                 password: ''
             })
             const res = await axios.post('/auth/signup', form);
+            console.log(form)
             if (res.data.success) {
                 console.log('User created successfully:', res.data.message);
             } else {

@@ -4,11 +4,11 @@ const nextConfig = {
         return [
             {
                 source: '/auth/:path*',
-                destination: 'https://ever-farm-backend-ndg5-1iqisgun1-sushants-projects-c40f823c.vercel.app/auth/:path*',
+                destination: 'https://everfarm-backend.onrender.com/auth/:path*',
             },
             {
                 source: '/api/:path*',
-                destination: 'https://ever-farm-backend-ndg5-1iqisgun1-sushants-projects-c40f823c.vercel.app/api/:path*', 
+                destination: 'https://everfarm-backend.onrender.com/api/:path*', 
             }
         ];
         ;
